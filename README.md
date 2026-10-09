@@ -5,155 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Class Project</title>
     <style>
-        /* CSS Reset & General Rules */
+        /* Base Reset */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
+        /* Page Layout */
         body {
             font-family: Arial, sans-serif;
-            background-color: #eef2f5;
+            background-color: #f4f4f4;
             color: #333333;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            line-height: 1.6;
             padding: 20px;
         }
 
-        /* Content Card Container */
+        /* Card Container */
         .card {
             background-color: #ffffff;
-            padding: 32px;
-            border-radius: 12px;
-            max-width: 550px;
-            width: 100%;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        /* Shared Styling for All Images */
-        .section-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 25px;
+            border: 1px solid #dddddd;
             border-radius: 8px;
-            margin-bottom: 20px;
         }
 
-        /* Typography */
+        /* Headings */
         h1 {
             color: #0056b3;
-            font-size: 26px;
-            margin-bottom: 12px;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 15px;
         }
 
         h2 {
             color: #0056b3;
-            font-size: 20px;
-            margin-top: 24px;
-            margin-bottom: 12px;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 15px;
         }
 
+        /* Paragraphs */
         p {
-            font-size: 16px;
-            line-height: 1.6;
+            font-size: 15px;
+            margin-bottom: 15px;
             color: #555555;
-            margin-bottom: 16px;
         }
 
-        /* Inline Meaningful Link Styling */
-        .meaningful-link {
+        /* Images */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Ordered List */
+        ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        ol li {
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #444444;
+        }
+
+        /* Links */
+        a {
             color: #0056b3;
             font-weight: bold;
             text-decoration: underline;
-        }
-
-        .meaningful-link:hover {
-            color: #003d80;
-        }
-
-        /* Ordered List Styling */
-        .topic-list {
-            margin-bottom: 16px;
-            padding-left: 20px;
-        }
-
-        .topic-list li {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #444444;
-            margin-bottom: 8px;
-        }
-
-        /* Call-to-Action Button Link */
-        .external-btn {
-            display: inline-block;
-            background-color: #0056b3;
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 15px;
-            padding: 12px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: background-color 0.2s ease, transform 0.1s ease;
-            margin-top: 8px;
-        }
-
-        .external-btn:hover {
-            background-color: #004085;
-            transform: translateY(-1px);
         }
     </style>
 </head>
 <body>
 
-    <main class="card">
-        
-        <!-- SECTION 1: Welcome Header -->
+    <div class="card">
+
+        <!-- Section 1: Header -->
         <header>
-            <!-- Image 1: Main Banner Header -->
-            <img src="banner.jpg" alt="A laptop on a clean wooden desk showing computer code on the screen" class="section-image">
-            
+            <img src="banner.jpg" alt="A laptop on a desk displaying computer code">
             <h1>Welcome to Web Development 101</h1>
-            <p>This is my brand new website created during class! In this course, we learn how to create and style modern web pages from scratch.</p>
+            <p>
+                This is my website created during class to learn HTML, CSS, and JavaScript.
+            </p>
         </header>
 
-        <!-- SECTION 2: What We Are Learning (Ordered List + Link 1) -->
+        <!-- Section 2: Learning Topics -->
         <section>
             <h2>What We Are Learning</h2>
-            
-            <!-- Image 2: Code Editor for Learning Section -->
-            <img src="code-editor.jpg" alt="Close-up of HTML and CSS lines of code inside a text editor" class="section-image">
+            <img src="code-editor.jpg" alt="Close-up of HTML and CSS code in a text editor">
 
-            <ol class="topic-list">
-                <li>Structuring web pages with <strong>HTML5</strong></li>
-                <li>Styling and layout design with <strong>CSS3</strong></li>
-                <li>Deploying websites using <strong>GitHub Pages</strong></li>
+            <ol>
+                <li><strong>HTML</strong> – structure</li>
+                <li><strong>CSS</strong> – styling</li>
+                <li><strong>JavaScript</strong> – functionality</li>
             </ol>
 
-            <!-- Meaningful Link 1 -->
-            <p>To master coding markup, we follow the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener noreferrer" class="meaningful-link">MDN Web Docs HTML Learning Guide</a>.</p>
+            <p>
+                To learn more, read the 
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">
+                    MDN Web Docs HTML Learning Guide
+                </a>.
+            </p>
         </section>
 
-        <!-- SECTION 3: Workspace & Resources (Link 2) -->
+        <!-- Section 3: Deployment -->
         <section>
             <h2>Our Deployment Workflow</h2>
-            
-            <!-- Image 3: Developer Setup for Workspace Section -->
-            <img src="workspace.jpg" alt="A developer workstation setup with dual monitors, keyboard, and coffee cup" class="section-image">
+            <img src="workspace.jpg" alt="Developer workstation setup with dual monitors">
 
-            <p>Publishing code live to the web is essential for showing off projects to classmates and future clients.</p>
+            <p>
+                Publishing projects online allows us to share our work with classmates.
+            </p>
 
-            <!-- Meaningful Link 2 (Button Style) -->
-            <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer" class="external-btn">
-                Read the GitHub Pages Documentation &rarr;
-            </a>
+            <p>
+                Read the official 
+                <a href="https://docs.github.com/en/pages" target="_blank">
+                    GitHub Pages Documentation
+                </a> 
+                to learn how site hosting works.
+            </p>
         </section>
 
-    </main>
+    </div>
 
 </body>
 </html>
-
