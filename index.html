@@ -2,70 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Class Project</title>
     <style>
+        /* Base Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page Layout */
         body {
             font-family: Arial, sans-serif;
-            background-color: #eef2f5;
+            background-color: #f4f4f4;
             color: #333333;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
+            line-height: 1.6;
+            padding: 20px;
         }
 
+        /* Card Container */
         .card {
             background-color: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
             max-width: 600px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .page-image {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
+            margin: 0 auto;
+            padding: 25px;
+            border: 1px solid #dddddd;
             border-radius: 8px;
-            margin-bottom: 20px;
         }
 
+        /* Headings */
         h1 {
             color: #0056b3;
-            margin-top: 0;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 15px;
         }
 
-        p {
+        h2 {
+            color: #0056b3;
             font-size: 18px;
-            line-height: 1.6;
+            margin-top: 25px;
+            margin-bottom: 15px;
         }
 
-        /* Styling for clickable links */
-        .external-link {
-            display: inline-block;
-            margin-top: 15px;
+        /* Paragraphs */
+        p {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: #555555;
+        }
+
+        /* Images */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Ordered List */
+        ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        ol li {
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #444444;
+        }
+
+        /* Links */
+        a {
             color: #0056b3;
             font-weight: bold;
-            text-decoration: none; /* Removes the default underline */
-        }
-
-        .external-link:hover {
-            text-decoration: underline; /* Adds underline back when hovering */
-            color: #003d80;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <img src="banner.jpg" alt="A laptop on a clean wooden desk showing computer code" class="page-image">
 
-        <h1>Welcome to Web Development 101</h1>
-        <p>This is my brand new website created during our class! In this class, we are learning the fundamentals of building and hosting websites using HTML, CSS, and GitHub Pages.</p>
+        <!-- Section 1: Header -->
+        <header>
+            <img src="banner.jpg" alt="A laptop on a desk displaying computer code">
+            <h1>Welcome to Web Development 101</h1>
+            <p>
+                This is my website created during class to learn HTML, CSS, and JavaScript.
+            </p>
+        </header>
 
-        <!-- Clickable Link Element -->
-        <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer" class="external-link">
-            Visit Wikipedia to learn more &rarr;
-        </a>
+        <!-- Section 2: Learning Topics -->
+        <section>
+            <h2>What We Are Learning</h2>
+            <img src="code-editor.jpg" alt="Close-up of HTML and CSS code in a text editor">
+
+            <ol>
+                <li><strong>HTML</strong> – structure</li>
+                <li><strong>CSS</strong> – styling</li>
+                <li><strong>JavaScript</strong> – functionality</li>
+            </ol>
+
+            <p>
+                To learn more, read the 
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">
+                    MDN Web Docs HTML Learning Guide
+                </a>.
+            </p>
+        </section>
+
+        <!-- Section 3: Deployment -->
+        <section>
+            <h2>Our Deployment Workflow</h2>
+            <img src="workspace.jpg" alt="Developer workstation setup with dual monitors">
+
+            <p>
+                Publishing projects online allows us to share our work with classmates.
+            </p>
+
+            <p>
+                Read the official 
+                <a href="https://docs.github.com/en/pages" target="_blank">
+                    GitHub Pages Documentation
+                </a> 
+                to learn how site hosting works.
+            </p>
+        </section>
+
     </div>
 
 </body>
