@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Website - Vibe Coding Part IV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Interactive Website! 🚀</h1>
+    <p>Vibe Coding Part IV Assignment</p>
+
+    <!-- Step 2: Button + Click Event -->
+    <section>
+        <h2>Step 2: Alert Button</h2>
+        <button id="alertBtn">Click Me for an Alert!</button>
+    </section>
+
+    <!-- Step 3: Change Something on the Page -->
+    <section>
+        <h2>Step 3: Change Page Content</h2>
+        <p id="textToChange">This text is original.</p>
+        <button id="changeTextBtn">Change This Text</button>
+    </section>
+
+    <!-- Step 4 & 5: User Input + Logic (if/else) -->
+    <section>
+        <h2>Step 4 & 5: User Input & Logic</h2>
+        <input type="text" id="userInput" placeholder="Enter your name...">
+        <button id="submitBtn">Submit</button>
+        <p id="greetingOutput"></p>
+    </section>
+
+    <!-- Step 6: Add Something Fun (Random Generator) -->
+    <section>
+        <h2>Step 6: Fun Random Fact Generator</h2>
+        <button id="funBtn">Get a Random Fact</button>
+        <p id="funOutput" style="font-style: italic; margin-top: 10px;"></p>
+    </section>
+
+    <!-- Step 1 Requirement: Place script tag at the bottom -->
+    <script src="script.js"></script>
+</body>
+</html>
